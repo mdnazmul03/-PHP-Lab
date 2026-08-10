@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Student Registration Form</h2>
+
+        <form action="process.php" method="GET" id="registrationForm">
+
+            <label>Student ID</label>
+            <input type="text" id="student_id" name="student_id">
+            <span id="idError"></span>
+
+            <label>Name</label>
+            <input type="text" id="name" name="name">
+            <span id="nameError"></span>
+
+            <label>Email</label>
+            <input type="text" id="email" name="email">
+            <span id="emailError"></span>
+
+            <label>Password</label>
+            <input type="password" id="password" name="password">
+            <span id="passwordError"></span>
+
+            <label>Gender</label>
+
+            <div class="radio-group">
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+            </div>
+
+            <span id="genderError"></span>
+
+            <label>Department</label>
+
+            <select id="department" name="department">
+                <option value="">-- Select Department --</option>
+                <option value="CSE">CSE</option>
+                <option value="EEE">EEE</option>
+                <option value="BBA">BBA</option>
+                <option value="English">English</option>
+            </select>
+
+            <span id="departmentError"></span>
+
+            <label>Address</label>
+
+            <textarea id="address" name="address"></textarea>
+
+            <span id="addressError"></span>
+
+            <button type="submit">Register</button>
+
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
