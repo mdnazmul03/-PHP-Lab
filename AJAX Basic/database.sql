@@ -1,0 +1,8 @@
+CREATE DATABASE IF NOT EXISTS simple_db_ajax;
+USE simple_db_ajax;
+
+CREATE TABLE IF NOT EXISTS people (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    id_number VARCHAR(50) NOT NULL
+);
